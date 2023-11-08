@@ -21,7 +21,7 @@ const PatientSearch = () => {
     const apiUrl = `http://127.0.0.1:3010/?fst_nme=${formData.firstName}&lst_nme=${formData.lastName}&dob=${formData.dob}`;
     fetch(apiUrl)
       .then(response => response.json())
-      .then(data => setSearchResults(data.slice(0, 10)))
+      .then(data => setSearchResults(data.slice(0, 1)))
       .catch(error => console.error('Error fetching patients:', error));
   };
 

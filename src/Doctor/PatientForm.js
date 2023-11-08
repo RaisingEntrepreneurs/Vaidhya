@@ -62,10 +62,17 @@ const PatientForm = () => {
     setFormData({ ...formData, [name]: type === 'checkbox' ? checked : value });
   };
 
-  const handleSubmit = (e) => {
+  /*> handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData); // You can replace this with actual form submission logic
-  };
+  };*/
+  // Inside the PatientForm component
+const handleSubmit = (e,props) => {
+  e.preventDefault();
+  props.onSubmit(formData); // Call the callback to submit data
+  // Other form submission logic...
+};
+
 
   return (
     <Container maxWidth="md" sx={{ marginTop: 4 }}>

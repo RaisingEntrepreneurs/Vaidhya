@@ -7,7 +7,7 @@ import * as ReactDOM from 'react-dom';
 ////import CenterContent from "./Home Page/Mainpage";
 ///import Patient from "./Doctor/PatientForm";
 ///import Doctorhome from "./Doctor/Doctorpage";
-import Doctorhome from "./Doctor/Doctorhome";
+import Patienthome from "./Patients/Patienthome";
 
 function VaidhyaHome () {
     return (
@@ -16,8 +16,8 @@ function VaidhyaHome () {
             <CenterContent />
             <Login />
              <Footer /> */}
-             < Doctorhome />
-
+             < Patienthome />
+             
     </div>
         
     )
